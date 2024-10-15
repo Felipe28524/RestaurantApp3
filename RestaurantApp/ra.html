@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant App</title>
+    <link rel="stylesheet" href="ra.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="siteTitle"> Restaurant App</h1>
+        <img id="logo" src="logoRA.jpg">
+    </div>
+    <div class="borderBetweenSections"></div>
+    <div id="main">
+        <div id="mainButtonsSection">
+            <div class="mainButtons" id="firstButton"> <img id="basketIcon" src="shopping-basket.png"> Koszyk <div class="basketCounterDiv" id="topBasketCounterDiv"> 0 </div></div>
+            <div class="mainButtons"> 🐔 Burgery z kurczakiem</div>
+            <div class="mainButtons"> 🐄 Burgery z wołowiną</div>
+            <div class="mainButtons"> 🍟Frytunie</div>
+            <div class="mainButtons"> 🍃 Wege</div>
+            <div class="mainButtons"> 🥩 Mięso</div>
+            <div class="mainButtons"> 🥤 Napoje</div>
+            <div class="mainButtons"> 🥪 Kanapki</div>
+            <div class="mainButtons"> 🍨 Desery</div>
+            <div class="mainButtons" id="lastButton"> 🥗 Sałatki </div>
+        </div>
+        <div id="productsSection"></div>
+        <div id="mainSectionFooter">
+            <div id="footerInfoDiv">
+                <div class="basketCounterDiv" id="BSDFooter"></div>
+                <p id="footerInfo"></p>
+                <button id="order"> Złóż zamówienie</button>
+            </div>
+        </div>
+    </div>
+    <div id="orderPanelDiv">
+        <div id="orderPanel">
+            <div id="orderProductsDiv">
+                
+            </div>
+            <div id="orderInfoDiv">
+                <button class="orderBtns" id="cancelBtn"><h2 class="orderInfo" id="cancel">Anuluj</h2></button>
+                <button class="orderBtns" id="confirmBtn"><h2 class="orderInfo" id="confirm">Zamów</h2></button>
+            </div>
+        </div>
+    </div>
+    <div id="payment">
+        <div id="paymentPanel">
+            <h2 id="finalPaymentPrice"></h2>
+            <button id="cardPayment">Przyłóż kartę do czytnika</button>
+            <button id="cancelPayment" class="orderBtns">Anuluj</button>
+        </div>
+    </div>
+    <div id="finalPaymentDiv">
+        <div id="finalPayment">
+            <div id="finalPaymentNote"> Zamówienie zostało złożone, powrót do menu za:</div>
+            <div id="finalPaymentCountdown"></div>
+            <button id="endPayment">Zakończ teraz</button>
+        </div>
+    </div>
+    <script src="ra.js"></script>
+</body>
+</html>
